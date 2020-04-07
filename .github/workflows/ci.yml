@@ -23,7 +23,7 @@ jobs:
           composer install --prefer-dist --no-interaction
 
     - name: Run tests
-      run: ./vendor/bin/phpunit --coverage-clover ./tests/Logs/clover.xml
+      run: ./vendor/bin/phpunit --coverage-clover ./build/logs/clover.xml
 
     - name: Code coverage uploading
       run: ./vendor/bin/php-coveralls -v
