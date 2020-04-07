@@ -1,18 +1,15 @@
 name: CI
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [push, pull_request]
 
 jobs:
   tests:
-    strategy:
-      matrix:
-        php: ['7.2', '7.3', '7.4']
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+    matrix:
+      operating-system: [ubuntu-latest]
+      php-versions: ['7.2', '7.3', '7.4']
 
     steps:
     - name: checkout code
@@ -26,6 +23,7 @@ jobs:
       run: ./vendor/bin/phpunit --coverage-clover ./build/logs/clover.xml
 
     - name: Send code clover file to coveralls.io
+      if: matrix.php-versions == '7.2'
       run: ./vendor/bin/php-coveralls -v
       env:
         COVERALLS_RUN_LOCALLY: 1
