@@ -2,6 +2,7 @@
 
 ![CI](https://github.com/peter279k/work-home-schedule/workflows/CI/badge.svg?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/peter279k/work-home-schedule/badge.svg?branch=master)](https://coveralls.io/github/peter279k/work-home-schedule?branch=master)
+[![StyleCI](https://github.styleci.io/repos/253847270/shield?branch=master)](https://github.styleci.io/repos/253847270)
 
 ## Introduction
 
