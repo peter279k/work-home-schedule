@@ -10,8 +10,8 @@ This is about working home schedule to estimate current working status on specif
 
 It's based on following scenario for A/B team work:
 
-- A team work from office today, B team will work from home today.
-- A team work from home tomorrow, B team will work from office tomorrow.
+- A team work from office today, and B team will work from home today.
+- A team work from home tomorrow, and B team will work from office tomorrow.
 - And so on.
 
 This situation will skip on country holiday and weekend.
