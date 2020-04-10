@@ -18,7 +18,7 @@ class WorkHomeSchedule
 
     public $csvHead = true;
 
-    private $calendars = [];
+    public $calendars = [];
 
     private function findNextWorkingDate(): Closure
     {
