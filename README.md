@@ -4,6 +4,20 @@
 [![Coverage Status](https://coveralls.io/repos/github/peter279k/work-home-schedule/badge.svg?branch=master)](https://coveralls.io/github/peter279k/work-home-schedule?branch=master)
 [![StyleCI](https://github.styleci.io/repos/253847270/shield?branch=master)](https://github.styleci.io/repos/253847270)
 
+## Installation
+
+- Download `composer` firstly:
+
+```BASH
+curl -sS https://getcomposer.org/installer | php
+```
+
+- Install `lee/work-home-schedule` secondly:
+
+```BASH
+php composer.phar require lee/work-home-schedule:^1
+```
+
 ## Introduction
 
 This is about working home schedule to estimate current working status on specific date.
